@@ -3,10 +3,11 @@
 # Cate Hazleden-Butler | Generation AU | AZC07 2023
 
 #imported modules
-
 import time,sys, os
 
-#define typeprint effect for output, input, and clear screen
+#functions for the typing effect for output and input with the parameter of "text"
+# references the sys module for standard output to write the character immediately after the current one and to flush forcing it to update immediately(without buffering)
+
 
 def typingPrint(text):
   for character in text:
@@ -19,9 +20,10 @@ def typingInput(text):
     sys.stdout.write(character)
     sys.stdout.flush()
     time.sleep(0.05)
-  value = input()  
+  value = input()
   return value
 
+#function to clear screen
 def clearScreen():
   os.system("clear")
 
@@ -33,17 +35,17 @@ verb1 = input("Verb: ")
 verb2 = input("Verb: ")
 verb3 = input("Verb: ")
 noun1 = input("Noun: ")
-noun2 = input("Noun: ")
+noun2 = input("Person's name: ")
 adv1 = input("Adverb: ")
 adj1 = input("Adjective: ")
 adj2 = input("Adjective: ")
 adj3 = input("Adjective: ")
 adj4 = input("Adjective: ")
-adj5 = input("Adjective: ")
+
 
 #mad libs1 output variable using f string (formatted string literals)
 
-madlib1 = f"At a(n) {adj1} tech firm, a {adj2} {noun1} chose to {verb1} in the {adj3} break room. \nSuddenly, a {noun2} {verb2} {adv1} in. \nThey all exchanged a {adj4} nod & {verb3} excitedly about projects. \nThe day became a {adj5} memory, showing work can have surprises!\n\n"
+madlib1 = f"At a(n) {adj1} tech firm, a {adj2} {noun1} chose to {verb1} in the break room. \nSuddenly, {noun2} {verb2} {adv1} in. \nThey exchanged a {adj3} nod & {verb3} excitedly about their projects. \nThe day became a {adj4} memory, showing work can have surprises!\n\n"
 
 
 print("")
