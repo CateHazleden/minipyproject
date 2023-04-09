@@ -29,7 +29,6 @@ def clearScreen():
 
 #ADD INTRO AND RULES
 
-
 #MadLib 1 input variables
 verb1 = input("Verb: ")
 verb2 = input("Verb: ")
@@ -45,7 +44,7 @@ adj4 = input("Adjective: ")
 
 #mad libs1 output variable using f string (formatted string literals)
 
-madlib1 = f"At a(n) {adj1} tech firm, a {adj2} {noun1} chose to {verb1} in the break room. \nSuddenly, {noun2} {verb2} {adv1} in. \nThey exchanged a {adj3} nod & {verb3} excitedly about their projects. \nThe day became a {adj4} memory, showing work can have surprises!\n\n"
+madlib1 = f"At a(n) {adj1} tech firm, a {adj2} {noun1} chose to {verb1} in the break room. \nSuddenly, {noun2} {verb2} {adv1} in. \nThey exchanged a {adj3} nod & {verb3}ed excitedly about their projects. \nThe day became a {adj4} memory, showing work can have surprises!\n\n"
 
 
 print("")
