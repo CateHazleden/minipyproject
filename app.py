@@ -64,7 +64,7 @@ time.sleep(2)
 goodbye = typingInput("Do you want to play again? (Type y or n)\n")
 
 if goodbye == "y":
-  typingPrint("Sorry, I don't have time today!\n")
+  typingPrint("Too bad, I don't have time today!\n")
 elif goodbye == "n":
   typingPrint("You'll be back!\n")
 else:
